@@ -1,0 +1,13 @@
+// login.js
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // Allow all logins (for demo or testing purposes only)
+  localStorage.setItem("loggedIn", "true");
+
+  // Redirect to homepage (e.g., index.html)
+  window.location.href = "index.html";
+});
